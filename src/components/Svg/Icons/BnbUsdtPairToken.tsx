@@ -1,0 +1,17 @@
+import React from "react";
+import Svg from "../Svg";
+import { SvgProps } from "../types";
+
+const Icon: React.FC<SvgProps> = (props) => {
+  return (
+    <Svg viewBox="0 0 64 64" {...props}>
+      <title>avalanche-avax-logo</title>
+      <defs>
+        <image width="64" height="64" id="avaxlogo" href="data:image/png;base64,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" />
+      </defs>
+      <use id="Background" href="#avaxlogo" x="0" y="0" />
+    </Svg>
+  );
+};
+
+export default Icon;
